@@ -8,7 +8,6 @@
             font-family: Arial, sans-serif;
             background: #f9f9f9;
             color: #333;
-            direction: ltr;
             padding: 20px;
         }
         .question {
@@ -49,23 +48,27 @@
 
 <script>
     const questions = [
-        // Sahl - Easy
-        { number: 1, difficulty: "سهل", question: "What is the plural of 'child'?", options: ["children", "childs", "childes", "kids"], correct: "children" },
-        { number: 2, difficulty: "سهل", question: "Which of the following is a correct sentence?", options: ["I can runs fast", "I can run fast", "I can ran fast", "I can running fast"], correct: "I can run fast" },
-        { number: 3, difficulty: "سهل", question: "What is the past tense of 'eat'?", options: ["ate", "eaten", "eats", "eating"], correct: "ate" },
-        // Add more questions here...
-        
-        // Mutawaset - Medium
-        { number: 34, difficulty: "متوسط", question: "Which of these is a correct use of 'used to'?", options: ["I used to go to school every day", "I use to went to school", "I use to go school every day", "I used go to school"], correct: "I used to go to school every day" },
-        { number: 35, difficulty: "متوسط", question: "Which is the correct form of the verb in past continuous tense?", options: ["I am eating", "I was eat", "I was eating", "I eat"], correct: "I was eating" },
-        { number: 36, difficulty: "متوسط", question: "Choose the correct indirect question: 'Could you tell me _____?'", options: ["where is the station", "where the station is", "where the station", "station is where"], correct: "where the station is" },
-        // Add more questions here...
-        
-        // Sa'b - Difficult
-        { number: 67, difficulty: "صعب", question: "What is the correct structure of the conditional sentence type 3?", options: ["If + past perfect, would have + past participle", "If + present, will + infinitive", "If + present perfect, would + infinitive", "If + past simple, would + infinitive"], correct: "If + past perfect, would have + past participle" },
-        { number: 68, difficulty: "صعب", question: "Which sentence is in the future perfect tense?", options: ["I will have finished my homework by 8 PM", "I am finishing my homework now", "I was finishing my homework", "I will finish my homework"], correct: "I will have finished my homework by 8 PM" },
-        { number: 69, difficulty: "صعب", question: "Choose the correct form: 'If he _____ more time, he would have come.'", options: ["had", "has", "have", "was"], correct: "had" },
-        // Add more questions here...
+        { number: 1, difficulty: "سهل", question: "What is the capital of the UK?", options: ["London", "Paris", "Berlin", "Madrid"], correct: "London" },
+        { number: 2, difficulty: "سهل", question: "Which is the largest planet in our solar system?", options: ["Earth", "Mars", "Jupiter", "Saturn"], correct: "Jupiter" },
+        { number: 3, difficulty: "سهل", question: "Who wrote 'Romeo and Juliet'?", options: ["Charles Dickens", "Jane Austen", "William Shakespeare", "Mark Twain"], correct: "William Shakespeare" },
+        { number: 4, difficulty: "متوسط", question: "What is the formula for water?", options: ["H2O", "CO2", "O2", "H2"], correct: "H2O" },
+        { number: 5, difficulty: "متوسط", question: "What is the longest river in the world?", options: ["Amazon", "Nile", "Yangtze", "Mississippi"], correct: "Nile" },
+        { number: 6, difficulty: "متوسط", question: "Which element has the chemical symbol O?", options: ["Oxygen", "Osmium", "Ozone", "Oganesson"], correct: "Oxygen" },
+        { number: 7, difficulty: "صعب", question: "Which year did the Titanic sink?", options: ["1905", "1912", "1898", "1921"], correct: "1912" },
+        { number: 8, difficulty: "صعب", question: "What is the name of the largest ocean on Earth?", options: ["Atlantic", "Indian", "Pacific", "Arctic"], correct: "Pacific" },
+        { number: 9, difficulty: "سهل", question: "What is the color of the sky?", options: ["Blue", "Red", "Green", "Yellow"], correct: "Blue" },
+        { number: 10, difficulty: "سهل", question: "How many continents are there?", options: ["5", "6", "7", "8"], correct: "7" },
+        { number: 11, difficulty: "متوسط", question: "What is the boiling point of water in Celsius?", options: ["90°C", "100°C", "120°C", "150°C"], correct: "100°C" },
+        { number: 12, difficulty: "متوسط", question: "Which gas do plants use for photosynthesis?", options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], correct: "Carbon dioxide" },
+        { number: 13, difficulty: "صعب", question: "What is the name of the first human to travel into space?", options: ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "Valentina Tereshkova"], correct: "Yuri Gagarin" },
+        { number: 14, difficulty: "صعب", question: "What is the capital of Canada?", options: ["Toronto", "Ottawa", "Vancouver", "Montreal"], correct: "Ottawa" },
+        { number: 15, difficulty: "سهل", question: "Which is the smallest planet in the solar system?", options: ["Mercury", "Venus", "Earth", "Mars"], correct: "Mercury" },
+        { number: 16, difficulty: "سهل", question: "Which is the largest mammal?", options: ["Elephant", "Blue whale", "Shark", "Giraffe"], correct: "Blue whale" },
+        { number: 17, difficulty: "متوسط", question: "What does DNA stand for?", options: ["Deoxyribonucleic acid", "Dynamite nitrogen acid", "Dioxynitrous acid", "Diphenylamine"], correct: "Deoxyribonucleic acid" },
+        { number: 18, difficulty: "متوسط", question: "Which language has the most native speakers?", options: ["English", "Mandarin", "Spanish", "Arabic"], correct: "Mandarin" },
+        { number: 19, difficulty: "صعب", question: "What is the name of the first artificial satellite?", options: ["Sputnik 1", "Apollo 11", "Explorer 1", "Hubble"], correct: "Sputnik 1" },
+        { number: 20, difficulty: "صعب", question: "Who was the first woman to win a Nobel Prize?", options: ["Marie Curie", "Dorothy Hodgkin", "Ada Lovelace", "Rosalind Franklin"], correct: "Marie Curie" },
+        // أكثر الأسئلة هنا ...
     ];
 
     function renderQuestions() {
