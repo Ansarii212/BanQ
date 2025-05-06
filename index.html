@@ -1,136 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>English Question Bank</title>
-  <style>
-    body { font-family: "Tahoma", sans-serif; padding: 20px; background-color: #fdf6ec; color: #333; direction: rtl; }
-    .question { background: #fff; border: 1px solid #ccc; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
-    ul { list-style: none; padding-left: 0; }
-    li { margin: 5px 0; }
-    .difficulty { font-weight: bold; color: #6c63ff; margin-bottom: 8px; text-align: left; }
-    button { margin-top: 10px; padding: 5px 10px; cursor: pointer; background-color: #6c63ff; color: white; border: none; border-radius: 5px; }
-    button:hover { background-color: #4b47c4; }
-  </style>
+    <meta charset="UTF-8">
+    <title>English MCQ Bank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            direction: ltr;
+            padding: 20px;
+        }
+        .question {
+            background: #fff;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+            text-align: left;
+        }
+        .difficulty {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-weight: bold;
+            color: #888;
+        }
+        .options {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .option {
+            margin: 5px 0;
+        }
+        .correct::before {
+            content: '✔️ ';
+            color: green;
+        }
+        button.copy-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1 style="text-align: left;">English Question Bank (100 Questions)</h1>
+<h1>English Multiple Choice Questions</h1>
 
-  <!-- Question 1 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>1. Who is the author of "Romeo and Juliet"?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
-    <ul style="text-align: left;">
-      <li>Shakespeare ✔️</li>
-      <li>Hemingway</li>
-      <li>Fitzgerald</li>
-      <li>Tolkien</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 2 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>2. What is the past tense of "go"?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
-    <ul style="text-align: left;">
-      <li>went ✔️</li>
-      <li>gone</li>
-      <li>goes</li>
-      <li>going</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 3 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>3. Choose the correct answer: "I ____ a teacher."</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
-    <ul style="text-align: left;">
-      <li>am ✔️</li>
-      <li>is</li>
-      <li>are</li>
-      <li>be</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 4 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>4. What is the opposite of "cheap"?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
-    <ul style="text-align: left;">
-      <li>expensive ✔️</li>
-      <li>cheap</li>
-      <li>free</li>
-      <li>affordable</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 5 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>5. Which of the following is a verb?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
-    <ul style="text-align: left;">
-      <li>run ✔️</li>
-      <li>quickly</li>
-      <li>happiness</li>
-      <li>good</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 6 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>6. Which of the following sentences is correct?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
-    <ul style="text-align: left;">
-      <li>She can sings well</li>
-      <li>She can sing well ✔️</li>
-      <li>She sing well</li>
-      <li>She can sung well</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 7 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>7. What is the synonym of "happy"?</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
-    <ul style="text-align: left;">
-      <li>joyful ✔️</li>
-      <li>sad</li>
-      <li>angry</li>
-      <li>hungry</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Question 8 -->
-  <div class="question">
-    <p style="text-align: left;"><strong>8. Choose the correct word: "I have been waiting ____ two hours."</strong></p>
-    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
-    <ul style="text-align: left;">
-      <li>for ✔️</li>
-      <li>since</li>
-      <li>by</li>
-      <li>during</li>
-    </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
-  </div>
-
-  <!-- Add more questions (2 through 100) in the same format as above -->
-
-  <script>
-    function copyToClipboard(button) {
-      const questionDiv = button.parentElement;
-      const text = questionDiv.innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        button.textContent = "Copied!";
-        setTimeout(() => button.textContent = "Copy", 2000);
-      });
+<!-- الأسئلة تبدأ من هنا -->
+<script>
+    const questions = [];
+    for (let i = 1; i <= 100; i++) {
+        const level = i <= 33 ? "سهل" : i <= 66 ? "متوسط" : "صعب";
+        questions.push({
+            number: i,
+            difficulty: level,
+            question: `What is the correct option for question number ${i}?`,
+            options: ["Option A", "Option B", "Option C", "Option D"],
+            correct: "Option B"
+        });
     }
-  </script>
+
+    function renderQuestions() {
+        const container = document.createElement('div');
+        questions.forEach(q => {
+            const qDiv = document.createElement('div');
+            qDiv.className = 'question';
+
+            const difficulty = document.createElement('div');
+            difficulty.className = 'difficulty';
+            difficulty.textContent = q.difficulty;
+            qDiv.appendChild(difficulty);
+
+            const qText = document.createElement('p');
+            qText.innerHTML = `<strong>Q${q.number}?</strong> ${q.question}`;
+            qDiv.appendChild(qText);
+
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options';
+            q.options.forEach(opt => {
+                const optDiv = document.createElement('div');
+                optDiv.className = 'option' + (opt === q.correct ? ' correct' : '');
+                optDiv.textContent = opt;
+                optionsDiv.appendChild(optDiv);
+            });
+            qDiv.appendChild(optionsDiv);
+
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'copy-btn';
+            copyBtn.textContent = 'Copy';
+            copyBtn.onclick = () => {
+                const text = `Q${q.number}? ${q.question}\n${q.options.join('\n')}`;
+                navigator.clipboard.writeText(text).then(() => {
+                    alert(`Copied question ${q.number}`);
+                });
+            };
+            qDiv.appendChild(copyBtn);
+
+            container.appendChild(qDiv);
+        });
+        document.body.appendChild(container);
+    }
+
+    window.onload = renderQuestions;
+</script>
+
 </body>
 </html>
