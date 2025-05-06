@@ -47,19 +47,26 @@
 <body>
 <h1>English Multiple Choice Questions</h1>
 
-<!-- الأسئلة تبدأ من هنا -->
 <script>
-    const questions = [];
-    for (let i = 1; i <= 100; i++) {
-        const level = i <= 33 ? "سهل" : i <= 66 ? "متوسط" : "صعب";
-        questions.push({
-            number: i,
-            difficulty: level,
-            question: `What is the past participle of "go"?`,
-            options: ["gone", "goed", "going", "goes"],
-            correct: "gone"
-        });
-    }
+    const questions = [
+        // Sahl - Easy
+        { number: 1, difficulty: "سهل", question: "What is the plural of 'child'?", options: ["children", "childs", "childes", "kids"], correct: "children" },
+        { number: 2, difficulty: "سهل", question: "Which of the following is a correct sentence?", options: ["I can runs fast", "I can run fast", "I can ran fast", "I can running fast"], correct: "I can run fast" },
+        { number: 3, difficulty: "سهل", question: "What is the past tense of 'eat'?", options: ["ate", "eaten", "eats", "eating"], correct: "ate" },
+        // Add more questions here...
+        
+        // Mutawaset - Medium
+        { number: 34, difficulty: "متوسط", question: "Which of these is a correct use of 'used to'?", options: ["I used to go to school every day", "I use to went to school", "I use to go school every day", "I used go to school"], correct: "I used to go to school every day" },
+        { number: 35, difficulty: "متوسط", question: "Which is the correct form of the verb in past continuous tense?", options: ["I am eating", "I was eat", "I was eating", "I eat"], correct: "I was eating" },
+        { number: 36, difficulty: "متوسط", question: "Choose the correct indirect question: 'Could you tell me _____?'", options: ["where is the station", "where the station is", "where the station", "station is where"], correct: "where the station is" },
+        // Add more questions here...
+        
+        // Sa'b - Difficult
+        { number: 67, difficulty: "صعب", question: "What is the correct structure of the conditional sentence type 3?", options: ["If + past perfect, would have + past participle", "If + present, will + infinitive", "If + present perfect, would + infinitive", "If + past simple, would + infinitive"], correct: "If + past perfect, would have + past participle" },
+        { number: 68, difficulty: "صعب", question: "Which sentence is in the future perfect tense?", options: ["I will have finished my homework by 8 PM", "I am finishing my homework now", "I was finishing my homework", "I will finish my homework"], correct: "I will have finished my homework by 8 PM" },
+        { number: 69, difficulty: "صعب", question: "Choose the correct form: 'If he _____ more time, he would have come.'", options: ["had", "has", "have", "was"], correct: "had" },
+        // Add more questions here...
+    ];
 
     function renderQuestions() {
         const container = document.createElement('div');
