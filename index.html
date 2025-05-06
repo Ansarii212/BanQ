@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>English Question Bank</title>
+  <style>
+    body { font-family: "Tahoma", sans-serif; padding: 20px; background-color: #fdf6ec; color: #333; direction: rtl; }
+    .question { background: #fff; border: 1px solid #ccc; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
+    ul { list-style: none; padding-left: 0; }
+    li { margin: 5px 0; }
+    .difficulty { font-weight: bold; color: #6c63ff; margin-bottom: 8px; text-align: left; }
+    button { margin-top: 10px; padding: 5px 10px; cursor: pointer; background-color: #6c63ff; color: white; border: none; border-radius: 5px; }
+    button:hover { background-color: #4b47c4; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: left;">English Question Bank (100 Questions)</h1>
+
+  <!-- Question 1 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>1. Who is the author of "Romeo and Juliet"?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>Shakespeare ✔️</li>
+      <li>Hemingway</li>
+      <li>Fitzgerald</li>
+      <li>Tolkien</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>2. What is the past tense of "go"?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>went ✔️</li>
+      <li>gone</li>
+      <li>goes</li>
+      <li>going</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>3. Choose the correct answer: "I ____ a teacher."</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
+    <ul style="text-align: left;">
+      <li>am ✔️</li>
+      <li>is</li>
+      <li>are</li>
+      <li>be</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>4. What is the opposite of "cheap"?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>expensive ✔️</li>
+      <li>cheap</li>
+      <li>free</li>
+      <li>affordable</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>5. Which of the following is a verb?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
+    <ul style="text-align: left;">
+      <li>run ✔️</li>
+      <li>quickly</li>
+      <li>happiness</li>
+      <li>good</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>6. Which of the following sentences is correct?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>She can sings well</li>
+      <li>She can sing well ✔️</li>
+      <li>She sing well</li>
+      <li>She can sung well</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>7. What is the synonym of "happy"?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
+    <ul style="text-align: left;">
+      <li>joyful ✔️</li>
+      <li>sad</li>
+      <li>angry</li>
+      <li>hungry</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>8. Choose the correct word: "I have been waiting ____ two hours."</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>for ✔️</li>
+      <li>since</li>
+      <li>by</li>
+      <li>during</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Add more questions (2 through 100) in the same format as above -->
+
+  <script>
+    function copyToClipboard(button) {
+      const questionDiv = button.parentElement;
+      const text = questionDiv.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.textContent = "Copied!";
+        setTimeout(() => button.textContent = "Copy", 2000);
+      });
+    }
+  </script>
+</body>
+</html>
